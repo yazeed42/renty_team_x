@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="ReportPage.css">
+
+  <meta charset="UTF-8">
+  <title>ReportPage</title>
+</head>
+<body>
+<div class="divHeader">
+
+  <ul>
+    <a href="homepage.html"><img src="logo.png" alt="your Logo" id="mg"></a>
+    <snap class="nave">
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="addOffer.html">Rent</a></li>
+        <li><a href="Request Page.html">Requests</a></li>
+        <li><a href="cart.html">Cart</a></li>
+    </snap>
+  </ul>
+</div>
+
+<main>
+  <h1 id="Head-yellow">Report an Issue</h1>
+  <div class="form-area">
+
+    <h2>Report Details</h2>
+    <form method="POST">
+      <label for = "name">Name</label><br>
+      <input type="text" name ="name" placeholder="Enter the Name"></input><br><br>
+      <label for = "email">Email</label><br>
+      <input type="text" name ="email" placeholder="Enter the Email"></input><br><br>
+      <label for = "description">Description</label><br>
+      <textarea rows="5"  ></textarea><br><br>
+      <label for="img">Select image:</label><br>
+      <input type="file" id="img" name="img" accept="image/*">
+
+      <input type="submit" value ="Submit" id="btn">
+    </form>
+  </div>
+
+</main>
+
+
+
+
+<footer >
+
+  <div> &copy; Renty </div>
+
+</footer>
+</body>
+</html>

@@ -1,0 +1,94 @@
+#offersAnnouncments{
+    border: 5px solid;
+    margin: auto;
+    width: 50%;
+}
+.container{
+    margin: 10vh;
+}
+main{
+    background-color:lemonchiffon;
+}
+footer{
+    background-color: gold;
+    text-align: center;
+    margin : 0px;
+    top: 0rem;
+    width: 100%;
+    height: 10vh;
+}
+.nave{
+    max-width: 500px;
+    margin: auto;
+    top: 0rem;
+    width: 100%;
+    padding: 0px 0px 0px 230px;
+}
+.nave li{
+    float: right;
+    margin:1rem;
+    font-family: Helvetica;
+    font-weight: bold;
+    display: inline;
+    text-decoration: none;
+    color: #000000;
+}
+.nave li a{
+    text-decoration: none;
+    color: #000000;
+
+}
+.nave ul{
+    display: inline;
+    float: left;
+    margin: rem 0 0 0 ;
+}
+
+.divHeader{
+    background-color:gold;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 1rem;
+
+}
+#mg{
+    display: inline-flex;
+    margin:1rem 0 0 0 ;
+    max-width: 7rem;
+}
+ul li{
+    display: inline-block;
+    padding:10px;
+    font-size:20px;
+    font-family:raleway;
+}
+.nave li :hover{
+    color:orange;
+
+}
+*{transition:all 0.3s ease-in-out;}
+#Head-yellow {
+    background-color: gold;
+    font-family: Helvetica ;
+    height: 4rem;
+    padding: 30px 0px 30px 0px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1rem;
+}
+.reqList{
+    margin: 1rem 0 1rem 0;
+    background-color:gold;
+    padding: 1rem 2rem 1rem 2rem;
+    font-family:Helvetica;
+    background-color: lemonchiffon;
+}
+.reqTable  {
+    margin: auto;
+
+
+}
+*{transition:all 0.3s ease-in-out;}
+
+

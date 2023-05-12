@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link rel="stylesheet" href="addoffer.css">
+        <title>Add Offer</title>
+
+    </head>
+    <body>
+        <nav class="divHeader">
+
+            <ul>
+                <a href="homepage.html"><img src="logo.png" alt="your Logo" id="mg"></a>
+                <snap class="nave">
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="addOffer.html">Rent</a></li>
+                    <li><a href="Request Page.html">Requests</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </snap>
+            </ul>
+        </nav>
+
+    
+        <main>
+            <div class="form-area">
+                
+                <h2>Add Offer</h2>
+                <form method="POST" action="cart.html">
+                    <label for = "name">Name</label><br>
+                    <input type="text" name ="name" placeholder="Enter the Name"></input><br><br>
+
+                    <label for = "price" >price Per Day</label><br>
+                    <input type="number" name ="price" class="price-input"></input><br><br>
+                    
+                    <label for = "description">Description</label><br>
+                    <input type="text" name ="description" placeholder="add a description"></input><br><br>
+
+                    <label for = "sDate">Start Date</label><br>
+                    <input type="date" name ="sDate" class="date-input"></input><br><br>
+
+                    <label for = "fDate">Final Date</label><br>
+                    <input type="date" name ="fDate" class="date-input"></input><br><br>
+
+                    <label for="img">Select image:</label><br>
+                    <input type="file" id="img" name="img" accept="image/*">
+                    
+                    <input type="submit" value ="Submit" id="btn">
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy;Renty</p>
+        </footer>
+    </body>
+
+    
+</html>
