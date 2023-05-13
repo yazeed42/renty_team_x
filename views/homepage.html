@@ -13,12 +13,12 @@
 <div class="divHeader">
 
     <ul>
-      <a href="homepage.html"><img src="logo.png" alt="your Logo" id="mg"></a>
+        <a href="/"><img src="logo.png" alt="your Logo" id="mg"></a>
       <snap class="nave">
-          <li><a href="profile.html">Profile</a></li>
-          <li><a href="login.html">Login</a></li>
-          <li><a href="addOffer.html">Rent</a></li>
-          <li><a href="Request Page.html">Requests</a></li>
+          <li><a href="/loginPage">Profile</a></li>
+          <li><a href="/loginPage">Login</a></li>
+          <li><a href="/loginPage">Rent</a></li>
+          <li><a href="/reqs">Requests</a></li>
           <li><a href="cart.html">Cart</a></li>
       </snap>
     </ul>
@@ -56,79 +56,18 @@
 
     <div class="container">
         <div class="row row-cols-4 ">
+          {% for item in items %}
           <div class="col">
             <div class = item >
               <img src="item.png" alt="item">
               <br>
-              item-1<br>
-              <button class = rentItem onclick="window.location.href = 'itemPage.html';">
+              {{item.title}}<br>
+              <button class = rentItem onclick="window.location.href = '/items/{{ item.item_ID }}';">
                   Rent
               </button>
             </div>
           </div>
-          <div class="col">
-            <div class = item >
-              <img src="item.png" alt="item">
-              <br> item-2<br>
-              <button class = rentItem onclick="window.location.href = 'itemPage.html';">
-                Rent
-              </button>
-            </div>
-          </div>
-          <div class="col">
-            <div class = item >
-              <img src="item.png" alt="item">
-              <br> item-3<br>
-              <button class = rentItem onclick="window.location.href = 'itemPage.html';">
-                Rent
-              </button>
-            </div>
-          </div>
-          <div class="col">
-            <div class = item >
-              <img src="item.png" alt="item">
-              <br> item-4<br>
-              <button class = rentItem onclick="window.location.href = 'itemPage.html';">
-                Rent
-              </button>
-            </div> 
-          </div>
-          <div class="col">
-            <div class = item >
-              <img src="item.png" alt="item">
-              <br> item-5<br>
-              <button class = rentItem onclick="window.location.href = 'itemPage.html';">
-                Rent
-              </button>
-            </div>
-          </div>
-          <div class="col">
-            <div class = item >
-              <img src="item.png" alt="item">
-              <br> item-6<br>
-              <button class = rentItem onclick="window.location.href = 'itemPage.html';">
-                Rent
-              </button>
-            </div>
-          </div>
-          <div class="col">
-            <div class = item >
-              <img src="item.png" alt="item">
-              <br>  item-7<br>
-              <button class = rentItem onclick="window.location.href = 'itemPage.html';">
-                Rent
-              </button>
-            </div>
-          </div>
-          <div class="col">
-            <div class = item >
-              <img src="item.png" alt="item">
-              <br>  item-8<br>
-              <button class = rentItem onclick="window.location.href = 'itemPage.html';">
-                  Rent
-              </button>
-            </div>
-          </div>
+          {% endfor %}
         </div>
       </div>
   </main>

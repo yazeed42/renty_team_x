@@ -13,12 +13,12 @@
 <div class="divHeader">
 
 <ul>
-    <a href="homepage.html"><img src="logo.png" alt="your Logo" id="mg"></a>
+    <a href=""/""><img src="logo.png" alt="your Logo" id="mg"></a>
     <snap class="nave">
-        <li><a href="profile.html">Profile</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="addOffer.html">Rent</a></li>
-        <li><a href="Request Page.html">Requests</a></li>
+        <li><a href="/loginPage">Profile</a></li>
+        <li><a href="/loginPage">Login</a></li>
+        <li><a href="/loginPage">Rent</a></li>
+        <li><a href="/reqs">Requests</a></li>
         <li><a href="cart.html">Cart</a></li>
     </snap>
 </ul>
@@ -37,54 +37,22 @@
                 </tr>
                 </thead>
                 <tbody>
+                {% for req in reqs %}
                 <tr id="request-1">
-                    <th scope="row">Ahmed </th>
-                    <td>laptop</td>
-                    <td>3 days</td>
+                    <th scope="row">{{req.requester_ID}} </th>
+                    <td>{{req.item_title}}</td>
+                    <td><span>{{req.days}}</span> days</td>
                     <td>
-                        <button class="w3-button w3-green" onclick="window.location.href = 'contactpage.html';">Accept</button>
+                        <button class="w3-button w3-green" >Accept</button>
                         <button class="w3-button w3-red" onclick="deleteRequest(this)">Decline</button>
                     </td>
                 </tr>
-                <tr id="request-2">
-                    <th scope="row">Abdullah</th>
-                    <td>Coffee Maker</td>
-                    <td>1 days</td>
-                    <td>
-                        <button class="w3-button w3-green" onclick="window.location.href = 'contactpage.html';">Accept</button>
-                        <button class="w3-button w3-red" onclick="deleteRequest(this)">Decline</button>
-                    </td>
-                </tr>
-                <tr id="request-3">
-                    <th scope="row">Yazeed</th>
-                    <td >Printer</td>
-                    <td>5 days</td>
-                    <td>
-                        <button class="w3-button w3-green" onclick="window.location.href = 'contactpage.html';">Accept</button>
-                        <button class="w3-button w3-red" onclick="deleteRequest(this)">Decline</button>
-                    </td>
-                </tr>
-                <tr id="request-4">
-                    <th scope="row">Saleh</th>
-                    <td>Speakers</td>
-                    <td>10 days</td>
-                    <td>
-                        <button class="w3-button w3-green" onclick="window.location.href = 'contactpage.html';">Accept</button>
-                        <button class="w3-button w3-red" onclick="deleteRequest(this)">Decline</button>
-                    </td>
-                </tr>
-                <tr id="request-5">
-                    <th scope="row">Mohammed</th>
-                    <td>Book</td>
-                    <td>2 days</td>
-                    <td>
-                        <button class="w3-button w3-green" onclick="window.location.href = 'contactpage.html';">Accept</button>
-                        <button class="w3-button w3-red" onclick="deleteRequest(this)">Decline</button>
-                    </td>
-                </tr>
+                {% endfor %}
+
                 </tbody>
             </table>
         </div>
+
 
 
 
